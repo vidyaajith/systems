@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js");if("IntersectionObserver" in window)document.documentElement.classList.add("js-rv");</script>
-<link rel="stylesheet" href="styles.css?v=21">
+<link rel="stylesheet" href="styles.css?v=23">
 </head>
 <body>
 
@@ -132,7 +132,7 @@
     <!-- copy the whole <article class="case"> block to add another example -->
     <div class="slider rv">
       <div class="slider-bar">
-        <div class="slider-tabs" role="tablist"><button class="slider-tab on" type="button" role="tab" aria-selected="true">Sales performance</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Case Room</button></div>
+        <div class="slider-tabs" role="tablist"><button class="slider-tab on" type="button" role="tab" aria-selected="true">Sales performance</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Case Room</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Business dashboard</button></div>
         <div class="slider-arrows"><button class="slider-btn prev" type="button" aria-label="Previous example">&larr;</button><button class="slider-btn next" type="button" aria-label="Next example">&rarr;</button></div>
       </div>
       <div class="track">
@@ -206,6 +206,45 @@
         <div class="step"><span class="n">i.</span><b>The problem</b><p>Sales, case load, ops reviews and inbox response lived in different tools, so leadership had no single view of the business.</p></div>
         <div class="step"><span class="n">ii.</span><b>What I built</b><p>A live Case Room dashboard pulling from the CRM, ClickUp and Slack, showing pipeline health, case ops and what needs attention.</p></div>
         <div class="step res"><span class="n">iii.</span><b>The result</b><p>Leadership sees the whole business in one place, refreshed automatically.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <div class="case-head">
+        <div><div class="k">Example 03</div><h3>The whole membership business, <em>on one page.</em></h3></div>
+        <div class="client">Membership business</div>
+      </div>
+      <div class="mock-wrap">
+        <div class="bd" role="img" aria-label="Business dashboard with sample data: needs-attention alerts, community membership numbers, weekly email sign-ups by source, and monthly member retention">
+          <div class="bd-head"><div class="bd-kicker">Membership business</div><div class="bd-title"><em>Business</em> Dashboard</div><div class="bd-upd"><i></i>Updated Monday</div></div>
+          <div class="bd-body">
+            <div class="bd-h">Needs attention</div>
+            <div class="bd-alert red"><span>Payments</span>9 customer payments failed or are being retried</div>
+            <div class="bd-alert amber"><span>Tasks</span>17 tasks are past the due date in ClickUp</div>
+            <div class="bd-alert amber"><span>Retention</span>Programme A (Jan cohort): kept 84.1% of members a month over the last 3 months</div>
+            <div class="bd-h">Community</div>
+            <div class="bd-cards">
+              <div><p>Active members</p><b>186<em class="up">↑ 4%</em></b><small>Was 179 at the end of last month</small></div>
+              <div><p>Monthly recurring revenue</p><b>+4%<em class="up">↑</em></b><small>Compared with the end of last month</small></div>
+              <div><p>Joined this month</p><b>14<em class="up">↑ 40%</em></b><small>10 in all of last month</small></div>
+              <div><p>Left this month</p><b>8<em class="dn">↑ 14%</em></b><small>7 in all of last month</small></div>
+              <div><p>Paused</p><b>31</b><small>Change shows once the month closes</small></div>
+            </div>
+            <div class="bd-h">New email subscribers</div>
+            <div class="bd-panel">
+              <div class="bd-sum"><div><b>17<em class="dn">↓ 15%</em></b><small>in the last 7 days, 20 the 7 days before</small></div><div><strong>Lead magnet</strong><small>main source this week</small></div></div>
+              <div class="bd-legend"><span><i class="w"></i>Live webinar</span><span><i class="l"></i>Lead magnet</span><span><i class="o"></i>Other or not tagged</span></div>
+              <div class="bd-chart"><div class="bd-col"><b>3</b><div class="bd-stack"><i class="w" style="height:25.0%"></i><i class="l" style="height:50.0%"></i></div><span>Mon</span></div><div class="bd-col"><b>2</b><div class="bd-stack"><i class="w" style="height:25.0%"></i><i class="l" style="height:25.0%"></i></div><span>Tue</span></div><div class="bd-col"><b>4</b><div class="bd-stack"><i class="l" style="height:75.0%"></i><i class="o" style="height:25.0%"></i></div><span>Wed</span></div><div class="bd-col"><b>2</b><div class="bd-stack"><i class="l" style="height:50.0%"></i></div><span>Thu</span></div><div class="bd-col"><b>1</b><div class="bd-stack"><i class="o" style="height:25.0%"></i></div><span>Fri</span></div><div class="bd-col"><b>4</b><div class="bd-stack"><i class="w" style="height:50.0%"></i><i class="l" style="height:50.0%"></i></div><span>Sat</span></div><div class="bd-col"><b>1</b><div class="bd-stack"><i class="l" style="height:25.0%"></i></div><span>Sun</span></div></div>
+            </div>
+            <div class="bd-h">How many members stay each month</div>
+            <div class="bd-panel bd-ret"><div><b>95.8%</b><small>stayed last month</small></div><div><b>92.6%</b><small>average over the last 12 months</small></div></div>
+          </div>
+        </div>
+        <div class="brief-note">Sample data · business name hidden</div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">i.</span><b>The problem</b><p>Payments, members, tasks and email growth sat in separate tools, so the founder pieced the picture together by hand.</p></div>
+        <div class="step"><span class="n">ii.</span><b>What I built</b><p>A business dashboard that pulls payments, ClickUp tasks, membership changes and email sign-ups into one page, with what needs attention at the top.</p></div>
+        <div class="step res"><span class="n">iii.</span><b>The result</b><p>Failed payments and overdue work surface before they cost members.</p></div>
       </div>
     </article>
       </div>
