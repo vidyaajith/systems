@@ -408,3 +408,18 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 .su-card.lines li::before{content:'×';background:none;width:auto;height:auto;top:0;left:1px;color:var(--acc);font-size:15px;line-height:1.4}
 .su-note{font-size:13px;color:var(--paper-dim);font-style:italic}
 @media(max-width:720px){.su-grid{grid-template-columns:1fr}}
+
+/* ── type & spacing consistency pass ──
+   One scale: hero 64 · CTA 44 · section label 34 · example title 40 · case title 32 · card title 28/22
+   · lead 22 · body 17 (intros) / 15 (panels) · labels 12 (buttons, tags) / 11 (eyebrows, notes) */
+.lede{font-size:clamp(16px,1.5vw,17px)}
+.build-title{font-size:clamp(28px,3.2vw,40px)}
+.final h2{font-size:clamp(28px,3.6vw,44px)}
+.step.res p{font-size:clamp(19px,1.8vw,22px)}
+.step .n{font-size:28px}
+.ap p,.bi p,.su-card li,.brief-lead{font-size:15px}
+.r .sub,.brief-note,.bi .tag,.su-k,.task-label,.task-src i{font-size:11px}
+/* one padding rhythm for every example panel */
+.brief,.chat,.task,.setup,.mock-wrap,.docwrap,.shots,.case-head,.step{padding-left:clamp(20px,2.8vw,36px);padding-right:clamp(20px,2.8vw,36px)}
+.brief,.chat,.task,.setup,.mock-wrap,.docwrap,.shots{padding-top:clamp(20px,2.8vw,36px);padding-bottom:clamp(20px,2.8vw,36px)}
+.case-head,.step{padding-top:clamp(20px,2.4vw,30px);padding-bottom:clamp(20px,2.4vw,30px)}
