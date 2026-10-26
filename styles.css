@@ -335,3 +335,4 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
 .mk-insight{margin-top:14px;background:#EFEBE2;border:1px solid #E3DED3;padding:10px 14px;font-size:12.5px;color:#333}
 @media(max-width:620px){.mk-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.mk-kpis.three{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .mk-kpis.last{border:0;padding-bottom:0;margin-bottom:0}
+footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-height:1.5;color:var(--paper-dim);opacity:.75;margin-top:4px}
