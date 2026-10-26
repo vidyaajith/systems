@@ -40,7 +40,7 @@ h2 em{font-style:italic;color:var(--gold)}
 .lede{font-size:clamp(17px,1.9vw,19px);line-height:1.65;color:var(--paper-faint);max-width:66ch}
 
 /* hero */
-.hero{position:relative;z-index:2;min-height:auto;display:flex;flex-direction:column;justify-content:center;padding-top:104px;padding-bottom:clamp(48px,6vw,80px);overflow:hidden;overflow:clip}
+.hero{position:relative;z-index:2;min-height:auto;display:flex;flex-direction:column;justify-content:center;padding-top:104px;padding-bottom:clamp(48px,6.5vw,86px);overflow:hidden;overflow:clip}
 .hero::after{content:'';position:absolute;z-index:-1;width:min(150vw,1500px);height:min(150vw,1500px);top:-60%;right:-35%;border-radius:50%;background:radial-gradient(circle,rgba(217,169,76,.13) 0%,rgba(196,100,60,.06) 38%,transparent 66%);filter:blur(30px)}
 .hero-tag{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;border:1px solid var(--line-2);border-radius:100px;padding:6px 15px 6px 11px;margin-bottom:24px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--paper-dim)}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
@@ -174,8 +174,6 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
 .build-title{font-size:clamp(32px,4.4vw,56px);line-height:1.05;letter-spacing:-.02em;color:var(--paper);max-width:16ch;margin-bottom:18px}
 .build-title em{color:var(--acc)}
 .build .lede{max-width:58ch;margin-bottom:32px}
-.backlink{display:inline-flex;margin-top:26px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--paper-dim);text-decoration:none;transition:color .3s ease}
-.backlink:hover{color:var(--acc)}
 
 .case{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--ink-2)}
 .case + .case{margin-top:40px}
