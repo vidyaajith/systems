@@ -44,9 +44,9 @@ h2 em{font-style:italic;color:var(--gold)}
 .hero::after{content:'';position:absolute;z-index:-1;width:min(150vw,1500px);height:min(150vw,1500px);top:-60%;right:-35%;border-radius:50%;background:radial-gradient(circle,rgba(217,169,76,.13) 0%,rgba(196,100,60,.06) 38%,transparent 66%);filter:blur(30px)}
 .hero-tag{display:inline-flex;align-items:center;gap:12px;align-self:flex-start;border:1px solid var(--line-2);border-radius:100px;padding:6px 15px 6px 11px;margin-bottom:24px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--paper-dim)}
 .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6.4vw,82px);line-height:1;letter-spacing:-.03em;margin-bottom:22px}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(32px,5vw,64px);line-height:1.02;letter-spacing:-.03em;margin-bottom:20px}
 h1 .it{font-style:italic;display:block;color:var(--gold)}
-.hero-sub{font-size:clamp(16px,1.8vw,19px);line-height:1.55;color:var(--paper-dim);max-width:46ch;margin-bottom:30px}
+.hero-sub{font-size:clamp(15px,1.5vw,17px);line-height:1.55;color:var(--paper-dim);max-width:46ch;margin-bottom:30px}
 .hero-sub b{color:var(--paper);font-weight:400}
 .hero-actions{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:12px;text-decoration:none;font-size:14px;font-weight:500;padding:16px 30px;border-radius:100px;transition:all .35s cubic-bezier(.22,1,.36,1)}
