@@ -24,6 +24,24 @@
   },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
   document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
 
+  var cio=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting) return;
+      var el=e.target, target=parseFloat(el.dataset.count);
+      var pre=el.dataset.prefix||'', suf=el.dataset.suffix||'';
+      var t0=null, dur=1300;
+      function tick(ts){
+        if(!t0) t0=ts;
+        var p=Math.min((ts-t0)/dur,1), eased=1-Math.pow(1-p,3);
+        el.textContent=pre+Math.round(target*eased)+suf;
+        if(p<1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      cio.unobserve(el);
+    });
+  },{threshold:.5});
+  document.querySelectorAll('[data-count]').forEach(function(el){cio.observe(el);});
+
   document.querySelectorAll('.readmore').forEach(function(btn){
     var box=btn.previousElementSibling, label=btn.textContent;
     if(!box || box.scrollHeight<=box.clientHeight+40){ if(box) box.classList.add('open'); btn.remove(); return; }
