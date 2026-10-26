@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js");if("IntersectionObserver" in window)document.documentElement.classList.add("js-rv");</script>
-<link rel="stylesheet" href="styles.css?v=18">
+<link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
 
@@ -130,7 +130,13 @@
     <h2 class="build-title rv">See problems <em>before your clients do.</em></h2>
     <p class="lede rv">One place for the numbers that matter, updated on their own, so you're not chasing your team for a status update.</p>
     <!-- copy the whole <article class="case"> block to add another example -->
-    <article class="case rv">
+    <div class="slider rv">
+      <div class="slider-bar">
+        <div class="slider-tabs" role="tablist"><button class="slider-tab on" type="button" role="tab" aria-selected="true">Sales performance</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Case Room</button></div>
+        <div class="slider-arrows"><button class="slider-btn prev" type="button" aria-label="Previous example">&larr;</button><button class="slider-btn next" type="button" aria-label="Next example">&rarr;</button></div>
+      </div>
+      <div class="track">
+    <article class="case">
       <div class="case-head">
         <div><div class="k">Example 01</div><h3>Sales performance, <em>at a glance.</em></h3></div>
         <div class="client">Retail · sales</div>
@@ -146,6 +152,64 @@
         <div class="step res"><span class="n">iii.</span><b>The result</b><p>Revenue, orders and budget gaps visible at a glance, sliced any way you need.</p></div>
       </div>
     </article>
+    <article class="case">
+      <div class="case-head">
+        <div><div class="k">Example 02</div><h3>Every case, <em>one room.</em></h3></div>
+        <div class="client">Professional services firm</div>
+      </div>
+      <div class="mock-wrap">
+        <div class="mock" role="img" aria-label="Case Room dashboard with sample data: sales pipeline, funnel, weekly activity, migration progress and case operations">
+          <div class="mk-top"><div class="mk-brand">Case Room</div><div class="mk-ref"><span>Last refreshed</span>Mon, 9:00 AM</div></div>
+          <div class="mk-stripe"><i></i><i></i><i></i><i></i></div>
+          <p class="mk-intro">Sales, case load, ops review and inbox response, in one place.</p>
+          <div class="mk-tab">Sales — CRM</div>
+          <div class="mk-panel">
+            <div class="mk-h">Client intake &amp; sales</div>
+            <div class="mk-sub">Live pipeline health, pulled from the CRM</div>
+            <div class="mk-kpis">
+              <div><b>184</b><span>Open opps</span><em class="flat">— 0%</em></div>
+              <div><b>3</b><span>Days since last close</span></div>
+              <div><b>28%</b><span>No owner</span><em class="good">▼ 4.1%</em></div>
+              <div><b>31%</b><span>No source</span><em class="good">▼ 1.8%</em></div>
+            </div>
+            <div class="mk-alert"><b>Needs attention</b><span>Nothing crossing a threshold today.</span></div>
+            <div class="mk-h2">Pipeline funnel, in stage order</div>
+            <div class="mk-funnel"><div class="fn" style="--w:54%;--c:#2E7BD6"><span>New lead</span><b>24</b></div><div class="fn" style="--w:74%;--c:#E8693A"><span>Contact attempted</span><b>96</b></div><div class="fn" style="--w:48%;--c:#1FAE7A"><span>Contacted</span><b>12</b></div><div class="fn" style="--w:49%;--c:#E9A20B"><span>Call scheduled</span><b>14</b></div><div class="fn" style="--w:51%;--c:#E77FA6"><span>Follow-up</span><b>18</b></div><div class="fn" style="--w:46%;--c:#0A8A2A"><span>Offer sent</span><b>9</b></div><div class="fn" style="--w:43%;--c:#4B3AA6"><span>Lost</span><b>5</b></div><div class="fn" style="--w:50%;--c:#E04B4B"><span>Email chain</span><b>15</b></div><div class="fn" style="--w:42%;--c:#2E7BD6"><span>Other</span><b>4</b></div></div>
+            <div class="mk-h2">This week's activity</div>
+            <div class="mk-kpis three">
+              <div><b><i style="background:#2E7BD6"></i>64</b><span>Calls attempted</span><em class="good">▲ 3.2%</em></div>
+              <div><b><i style="background:#1FAE7A"></i>29</b><span>Leads reached</span><em class="bad">▼ 8.1%</em></div>
+              <div><b><i style="background:#4B3AA6"></i>41</b><span>Status moves</span></div>
+            </div>
+            <div class="mk-h2">Legacy pipeline migration</div>
+            <div class="mk-bar"><i style="width:38%"></i></div>
+            <p class="mk-note"><b>160 of 420</b> migrated (38%) · <b>260</b> still open</p>
+            <div class="mk-h2">Closed deals</div>
+            <p class="mk-note">This week: <b>2 closed</b> · Last week: <b>3 closed</b></p>
+            <div class="mk-insight">52% of the pipeline is in Contact Attempted; 5 opportunities sit in a Lost-named stage but are still marked open.</div>
+          </div>
+          <div class="mk-tab green">Case ops — ClickUp</div>
+          <div class="mk-panel">
+            <div class="mk-h">Active matters</div>
+            <div class="mk-sub">Client cases, live from ClickUp and Slack</div>
+            <div class="mk-kpis last">
+              <div><b>46</b><span>Active matters</span></div>
+              <div><b>7</b><span>Overdue tasks</span><em class="bad">▲ 2</em></div>
+              <div><b>12</b><span>Waiting on client</span></div>
+              <div><b>94%</b><span>Inbox replied &lt; 48h</span><em class="good">▲ 3%</em></div>
+            </div>
+          </div>
+        </div>
+        <div class="brief-note">Sample data · firm name hidden</div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">i.</span><b>The problem</b><p>Sales, case load, ops reviews and inbox response lived in different tools, so leadership had no single view of the business.</p></div>
+        <div class="step"><span class="n">ii.</span><b>What I built</b><p>A live Case Room dashboard pulling from the CRM, ClickUp and Slack, showing pipeline health, case ops and what needs attention.</p></div>
+        <div class="step res"><span class="n">iii.</span><b>The result</b><p>Leadership sees the whole business in one place, refreshed automatically.</p></div>
+      </div>
+    </article>
+      </div>
+    </div>
     <a class="backlink rv" href="#builds">&uarr; All builds</a>
   </div>
 </section>
