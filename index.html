@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script>document.documentElement.classList.add("js");if("IntersectionObserver" in window)document.documentElement.classList.add("js-rv");</script>
-<link rel="stylesheet" href="styles.css?v=27">
+<link rel="stylesheet" href="styles.css?v=28">
 </head>
 <body>
 
@@ -269,7 +269,7 @@
     <!-- copy the whole <article class="case"> block to add another example -->
     <div class="slider rv">
       <div class="slider-bar">
-        <div class="slider-tabs" role="tablist"><button class="slider-tab on" type="button" role="tab" aria-selected="true">Weekly brief</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Ask anything</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Find the answer</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Create tasks</button></div>
+        <div class="slider-tabs" role="tablist"><button class="slider-tab on" type="button" role="tab" aria-selected="true">Weekly brief</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Ask anything</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Find the answer</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Create tasks</button><button class="slider-tab" type="button" role="tab" aria-selected="false">Agent setup</button></div>
         <div class="slider-arrows"><button class="slider-btn prev" type="button" aria-label="Previous example">&larr;</button><button class="slider-btn next" type="button" aria-label="Next example">&rarr;</button></div>
       </div>
       <div class="track">
@@ -376,6 +376,40 @@
         <div class="step"><span class="n">i.</span><b>The problem</b><p>Turning a passing thought into a proper task meant opening ClickUp and filling in every field by hand.</p></div>
         <div class="step"><span class="n">ii.</span><b>What I built</b><p>The agent creates tasks from a plain-language request, with the assignee, due date and tags already set.</p></div>
         <div class="step res"><span class="n">iii.</span><b>The result</b><p>Any task created in seconds, straight from a conversation.</p></div>
+      </div>
+    </article>
+    <article class="case">
+      <div class="case-head">
+        <div><div class="k">Example 05</div><h3>A chief of staff, <em>with a specialist on call.</em></h3></div>
+        <div class="client">Membership business</div>
+      </div>
+      <div class="setup scrollframe" tabindex="0">
+        <div class="su-head"><div class="who"><span class="av"></span>Chief of Staff agent</div><span class="sched">Default role</span></div>
+        <p class="su-role">The default role for a membership business. Explains everything in plain language, with no jargon and nothing assumed.</p>
+        <div class="task-src">Connected to <span>Shopify</span><span>Kit</span><span>Kajabi</span><span>EasyWebinar <i>manual</i></span><span>ClickUp</span><span>Gmail</span></div>
+        <div class="su-grid">
+          <div class="su-card">
+            <div class="su-k">Handles directly</div>
+            <ul><li>Status questions and prioritisation</li><li>Drafting internal notes</li><li>ClickUp housekeeping</li><li>Tracking the launch checklist</li><li>Quick lookups across every tool</li></ul>
+          </div>
+          <div class="su-card sub">
+            <div class="su-k">Delegates to <b>Dashboard agent</b></div>
+            <ul><li>Why a number or flag looks off</li><li>Adding or fixing a data source</li><li>Changes to the dashboard code</li><li>Checking what is actually live</li></ul>
+            <div class="su-k small">Lessons it carries forward</div>
+            <ul class="lessons"><li>Recurring revenue is always calculated from live member data, never a pre-calculated cell</li><li>The live dashboard does not update itself: check the deployed version before assuming</li></ul>
+          </div>
+        </div>
+        <div class="su-card lines">
+          <div class="su-k">Hard lines</div>
+          <ul><li>Never puts API keys or passwords in chat</li><li>Never pushes a dashboard update live without sign-off</li><li>Never assumes an automation is running without checking</li><li>Flags it if a change would alter which source counts as the truth</li></ul>
+        </div>
+        <p class="su-note">More specialist agents get added as real needs come up.</p>
+        <div class="brief-note">Business name, people and IDs hidden</div>
+      </div>
+      <div class="steps">
+        <div class="step"><span class="n">i.</span><b>The problem</b><p>Everyday questions and delicate dashboard changes landed in the same place, and the risky work needed clear guardrails.</p></div>
+        <div class="step"><span class="n">ii.</span><b>What I built</b><p>A Chief of Staff agent that handles routine work itself and hands dashboard work to its own specialist agent, with hard lines on keys and releases.</p></div>
+        <div class="step res"><span class="n">iii.</span><b>The result</b><p>Routine answers on the spot, specialist work done carefully, and nothing goes live without sign-off.</p></div>
       </div>
     </article>
       </div>
