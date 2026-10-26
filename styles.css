@@ -72,7 +72,7 @@ h1 .it{font-style:italic;display:block;color:var(--gold)}
 
 /* results */
 .results{background:var(--ink-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:40px}
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:32px}
 .r{background:var(--ink-2);padding:clamp(22px,2.6vw,34px);display:flex;flex-direction:column;gap:14px}
 .r .vis{height:66px;display:flex;align-items:flex-end}
 .r .big{font-family:var(--serif);font-size:clamp(34px,4.6vw,56px);line-height:.95;letter-spacing:-.03em;color:var(--gold);display:flex;align-items:flex-end;min-height:calc(clamp(34px,4.6vw,56px) * .95)}
@@ -85,7 +85,7 @@ h1 .it{font-style:italic;display:block;color:var(--gold)}
 .rv.in .grow{transform:scaleY(1)}
 
 /* four builds */
-.approach{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.approach{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:32px}
 .ap{--acc:var(--gold);--acc-soft:var(--gold-soft);--acc-line:rgba(217,169,76,.4);position:relative;overflow:hidden;display:flex;flex-direction:column;min-height:300px;padding:clamp(24px,2.6vw,32px);border:1px solid var(--line);border-radius:14px;background:linear-gradient(180deg,var(--ink-3),var(--ink-2) 70%);text-decoration:none;color:inherit}
 .ap.g{--acc:var(--green);--acc-soft:var(--green-soft);--acc-line:rgba(95,208,138,.4)}
 .ap.blue{--acc:var(--blue);--acc-soft:var(--blue-soft);--acc-line:rgba(111,168,245,.42)}
@@ -173,7 +173,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
 .build .tag{font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--acc)}
 .build-title{font-size:clamp(32px,4.4vw,56px);line-height:1.05;letter-spacing:-.02em;color:var(--paper);max-width:16ch;margin-bottom:18px}
 .build-title em{color:var(--acc)}
-.build .lede{max-width:58ch;margin-bottom:40px}
+.build .lede{max-width:58ch;margin-bottom:32px}
 .backlink{display:inline-flex;margin-top:26px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--paper-dim);text-decoration:none;transition:color .3s ease}
 .backlink:hover{color:var(--acc)}
 
