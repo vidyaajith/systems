@@ -65,7 +65,10 @@
       tabs.forEach(function(t,k){ t.classList.toggle('on',k===i); t.setAttribute('aria-selected',k===i?'true':'false'); });
       if(tabs[i]) tabs[i].parentNode.scrollTo({left:tabs[i].offsetLeft-16,behavior:'smooth'});
       prev.disabled=i===0; next.disabled=i===slides.length-1;
+      dots.forEach(function(b,k){ b.classList.toggle('on',k===i); });
     }
+    var dotsWrap=sl.querySelector('.slider-dots'), dots=[];
+    if(dotsWrap){ for(var d=0;d<slides.length;d++){ (function(k){ var b=document.createElement('button'); b.type='button'; b.setAttribute('aria-label','Example '+(k+1)); b.addEventListener('click',function(){ go(k); }); dotsWrap.appendChild(b); dots.push(b); })(d); } }
     tabs.forEach(function(t,k){ t.addEventListener('click',function(){ go(k); }); });
     prev.addEventListener('click',function(){ go(cur-1); });
     next.addEventListener('click',function(){ go(cur+1); });

@@ -240,7 +240,7 @@ footer a:hover{color:var(--gold);border-color:var(--gold)}
 .track{position:relative;display:flex;gap:20px;align-items:flex-start;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;overscroll-behavior-x:contain}
 .track::-webkit-scrollbar{display:none}
 .track > .case{flex:0 0 100%;scroll-snap-align:start;margin:0}
-@media(max-width:720px){.slider-arrows{display:none}}
+
 
 /* dashboard screenshots */
 .shots{display:grid;gap:16px;padding:clamp(16px,2.6vw,32px);border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 120%,var(--acc-soft),transparent 60%),var(--ink-3)}
@@ -436,3 +436,15 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 .build-title{font-size:clamp(24px,2.6vw,32px);color:var(--paper);max-width:32ch;margin-bottom:14px}
 @media(max-width:520px){.build .tag-name::after{display:none}.build .tag-name{letter-spacing:.06em}}
 .task-name{flex-wrap:wrap;row-gap:4px}
+
+/* side arrows + dots so the example rows read as swipeable */
+.track-wrap{position:relative}
+.slider-btn.side{position:absolute;top:clamp(140px,38%,340px);z-index:3;width:56px;height:56px;font-size:22px;color:var(--paper);background:rgba(14,14,17,.92);border:1px solid var(--acc-line);box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 5px rgba(8,8,10,.55);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:background .25s ease,color .25s ease,opacity .25s ease,transform .25s ease}
+.slider-btn.side.prev{left:-28px}
+.slider-btn.side.next{right:-28px}
+.slider-btn.side:hover{background:var(--acc);color:var(--ink);border-color:var(--acc);transform:scale(1.06)}
+.slider-btn.side:disabled{opacity:0;pointer-events:none}
+.slider-dots{display:flex;justify-content:center;align-items:center;gap:10px;margin-top:22px}
+.slider-dots button{width:9px;height:9px;padding:0;border-radius:100px;border:0;background:var(--line-2);cursor:pointer;transition:width .3s ease,background .3s ease}
+.slider-dots button.on{width:28px;background:var(--acc)}
+@media(max-width:720px){.slider-btn.side{width:44px;height:44px;font-size:18px;top:150px}.slider-btn.side.prev{left:-12px}.slider-btn.side.next{right:-12px}}
