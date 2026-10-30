@@ -469,3 +469,8 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 .shots .zoom{display:block;border-radius:10px;cursor:zoom-in}
 .shots .zoom:hover .shot{border-color:var(--acc-line)}
 .shots .zoom:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+
+/* founder-voice headline + plain description */
+.case-head h3.voice{font-size:clamp(22px,2.4vw,28px);line-height:1.22;max-width:38ch}
+.case-head .what{margin-top:10px;font-size:15px;line-height:1.55;color:var(--paper-dim);max-width:62ch}
+.case-head>div:first-child{min-width:0;flex:1 1 340px}
