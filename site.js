@@ -95,7 +95,12 @@
       p2.addEventListener('click',function(){ go(cur-1); }); n2.addEventListener('click',function(){ go(cur+1); });
       dotsWrap.insertBefore(p2,dotsWrap.firstChild); dotsWrap.appendChild(n2);
     }
-    var _mark=mark; mark=function(i){ _mark(i); if(p2){ p2.disabled=i===0; n2.disabled=i===slides.length-1; } };
+    function fit(){ var h=slides[cur]&&slides[cur].offsetHeight; if(h) track.style.height=h+'px'; }
+    var _mark=mark; mark=function(i){ _mark(i); if(p2){ p2.disabled=i===0; n2.disabled=i===slides.length-1; } fit(); };
+    window.addEventListener('resize',fit);
+    window.addEventListener('load',fit);
+    track.querySelectorAll('img').forEach(function(im){ im.addEventListener('load',fit); });
+    if(window.ResizeObserver){ var ro=new ResizeObserver(fit); Array.prototype.forEach.call(slides,function(sl){ ro.observe(sl); }); }
     mark(0);
   });
 })();

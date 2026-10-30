@@ -497,3 +497,6 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 .step p{font-size:16px;line-height:1.6}
 .step b{font-size:12px}
 .step .n{font-size:24px;margin-bottom:10px}
+
+/* row height follows the visible example */
+.track{overflow-y:hidden;transition:height .35s cubic-bezier(.22,1,.36,1)}
