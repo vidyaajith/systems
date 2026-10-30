@@ -510,3 +510,44 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 /* teal accent (Dashboards) */
 .ap.teal{--acc:var(--teal);--acc-soft:var(--teal-soft);--acc-line:rgba(47,211,198,.5)}
 .acc-teal{--acc:var(--teal);--acc-soft:var(--teal-soft);--acc-line:rgba(47,211,198,.5)}
+
+/* ── premium polish ── */
+/* hero with signature collage */
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,64px);align-items:center}
+.hero-visual{position:relative;aspect-ratio:1.18;min-height:0}
+.hero-visual .hv{position:absolute;display:block;height:auto;border-radius:10px;border:1px solid rgba(255,255,255,.08);box-shadow:0 30px 60px rgba(0,0,0,.55)}
+.hero-visual .hv-back{width:78%;right:0;top:4%;opacity:.55;filter:saturate(.8)}
+.hero-visual .hv-main{width:88%;left:0;top:22%}
+.hero-visual .hv-front{width:58%;right:2%;bottom:2%}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr}.hero-visual{max-width:560px;margin-top:8px}}
+@media(max-width:520px){.hero-visual{aspect-ratio:1.3}}
+
+/* 1. restraint: drop most glows */
+.slider-btn.side{box-shadow:0 0 0 5px rgba(8,8,10,.7),0 8px 24px rgba(0,0,0,.45)}
+.slider-btn.side.nudge{animation:nudge2 2.2s ease-in-out infinite}
+@keyframes nudge2{0%,100%{transform:translateX(0)}50%{transform:translateX(4px)}}
+.slider-dots .dotnav,.build .tagrow .icobox,.who .av{box-shadow:none}
+.ap .num{opacity:.4}
+.ap:hover .num{opacity:.6}
+
+/* 2. quieter in-card labels: sentence case */
+.case-head .k,.case-head .client,.step b,.brief-note,.task-label,.su-k,.slider-count{text-transform:none;letter-spacing:.02em}
+.case-head .k{font-size:13px;font-weight:500}
+.case-head .client{font-size:13px}
+.step b{font-size:14px;font-weight:500}
+.brief-note{font-size:12px}
+.task-label,.su-k{font-size:13px}
+
+/* 3. crisp icon buttons */
+.slider-btn.side svg,.dotnav svg{display:block}
+.slider-btn.side,.slider-dots .dotnav{align-items:center;justify-content:center}
+.slider-btn.side{display:inline-flex}
+@media(max-width:720px){.slider-btn.side{display:none}}
+
+/* 4. more breathing room */
+section{padding-top:clamp(56px,7.5vw,104px);padding-bottom:clamp(56px,7.5vw,104px)}
+.case-head{padding-top:clamp(24px,2.8vw,36px);padding-bottom:clamp(24px,2.8vw,36px)}
+
+/* 5. one corner system: panels 16, inner cards & frames 10, controls pill */
+.ap,.case{border-radius:16px}
+.bi,.su-card,.mock,.bd,.docframe,.shots .scrollframe,.hero-visual .hv{border-radius:10px}

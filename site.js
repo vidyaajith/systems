@@ -90,8 +90,8 @@
     if(count) dotsWrap.appendChild(count);
     var p2=null,n2=null;
     if(dotsWrap){
-      p2=document.createElement('button'); p2.type='button'; p2.className='dotnav'; p2.setAttribute('aria-label','Previous example'); p2.innerHTML='&larr;';
-      n2=document.createElement('button'); n2.type='button'; n2.className='dotnav'; n2.setAttribute('aria-label','Next example'); n2.innerHTML='&rarr;';
+      p2=document.createElement('button'); p2.type='button'; p2.className='dotnav'; p2.setAttribute('aria-label','Previous example'); p2.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>';
+      n2=document.createElement('button'); n2.type='button'; n2.className='dotnav'; n2.setAttribute('aria-label','Next example'); n2.innerHTML='<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>';
       p2.addEventListener('click',function(){ go(cur-1); }); n2.addEventListener('click',function(){ go(cur+1); });
       dotsWrap.insertBefore(p2,dotsWrap.firstChild); dotsWrap.appendChild(n2);
     }
