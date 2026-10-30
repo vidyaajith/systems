@@ -492,3 +492,8 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 .step.res .fig{font-family:var(--sans);font-weight:600;font-variant-numeric:tabular-nums lining-nums;font-size:clamp(26px,2.6vw,34px);letter-spacing:-.03em;line-height:1;margin-right:12px}
 .step.res p.fig-l{font-size:16px;color:var(--paper)}
 @media(max-width:860px){.step.res{grid-template-columns:auto 1fr;row-gap:6px}.step.res b{grid-column:1/-1;margin:0}}
+
+/* problem / built: same reading size as the result line */
+.step p{font-size:16px;line-height:1.6}
+.step b{font-size:12px}
+.step .n{font-size:24px;margin-bottom:10px}
