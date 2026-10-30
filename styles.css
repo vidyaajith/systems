@@ -1,7 +1,7 @@
 :root{
   --ink:#08080A;--ink-2:#0E0E11;--ink-3:#141418;
   --line:rgba(255,255,255,.09);--line-2:rgba(255,255,255,.16);
-  --paper:#F2EEE6;--paper-dim:rgba(242,238,230,.82);--paper-faint:rgba(242,238,230,.9);
+  --paper:#F2EEE6;--paper-dim:rgba(242,238,230,.9);--paper-faint:rgba(242,238,230,.95);
   --gold:#D9A94C;--gold-soft:rgba(217,169,76,.13);
   --rust:#C4643C;--rust-soft:rgba(196,100,60,.13);
   --green:#5FD08A;--green-soft:rgba(95,208,138,.13);
@@ -551,3 +551,10 @@ section{padding-top:clamp(56px,7.5vw,104px);padding-bottom:clamp(56px,7.5vw,104p
 /* 5. one corner system: panels 16, inner cards & frames 10, controls pill */
 .ap,.case{border-radius:16px}
 .bi,.su-card,.mock,.bd,.docframe,.shots .scrollframe,.hero-visual .hv{border-radius:10px}
+
+/* readability + result alignment */
+.step p{font-size:17px;line-height:1.6;color:var(--paper-faint)}
+.step b{font-size:15px}
+.step.res{align-items:center}
+.step.res .fig{line-height:1;display:flex;align-items:center}
+.step.res p.fig-l{font-size:17px;line-height:1.4}
