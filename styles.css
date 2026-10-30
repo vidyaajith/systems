@@ -8,6 +8,7 @@
   --blue:#6FA8F5;--blue-soft:rgba(111,168,245,.14);
   --violet:#B48CF2;--violet-soft:rgba(180,140,242,.14);
   --rose:#EE7F96;--rose-soft:rgba(238,127,150,.14);
+  --teal:#40C9C0;--teal-soft:rgba(64,201,192,.14);
   --serif:'Instrument Serif', Georgia, serif;
   --sans:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   --pad: clamp(24px, 6vw, 120px);
@@ -505,3 +506,7 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 /* compact How it plugs in diagram */
 .figure{padding:clamp(18px,2.4vw,28px) clamp(20px,3vw,34px)}
 .figure .cap{margin-top:14px}
+
+/* teal accent (Dashboards) */
+.ap.teal{--acc:var(--teal);--acc-soft:var(--teal-soft);--acc-line:rgba(64,201,192,.42)}
+.acc-teal{--acc:var(--teal);--acc-soft:var(--teal-soft);--acc-line:rgba(64,201,192,.42)}
