@@ -500,3 +500,4 @@ footer .disclaimer{flex-basis:100%;font-size:11px;letter-spacing:.03em;line-heig
 
 /* row height follows the visible example */
 .track{overflow-y:hidden;transition:height .35s cubic-bezier(.22,1,.36,1)}
+.step.res p.fig-l{max-width:none}
