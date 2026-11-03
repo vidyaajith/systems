@@ -567,3 +567,10 @@ section{padding-top:clamp(56px,7.5vw,104px);padding-bottom:clamp(56px,7.5vw,104p
 .brief-note{font-size:11px}
 .task-label,.su-k{font-size:11px}
 .slider-count{letter-spacing:.16em}
+
+/* no dim text anywhere */
+footer .disclaimer{opacity:1;color:var(--paper-dim)}
+.step .n,.step.res .n{opacity:1}
+.build .tagrow .tag b{opacity:.9}
+.ap .num{opacity:.7}
+.ap:hover .num{opacity:1}

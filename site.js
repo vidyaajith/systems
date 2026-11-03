@@ -59,7 +59,8 @@
     var track=sl.querySelector('.track'), slides=track.children,
         tabs=sl.querySelectorAll('.slider-tab'),
         prev=sl.querySelector('.prev'), next=sl.querySelector('.next'), cur=0;
-    function go(i){ i=Math.max(0,Math.min(slides.length-1,i)); track.scrollTo({left:slides[i].offsetLeft}); }
+    var lock=0;
+    function go(i){ i=Math.max(0,Math.min(slides.length-1,i)); lock=Date.now()+700; mark(i); track.scrollTo({left:slides[i].offsetLeft}); }
     function mark(i){
       cur=i;
       tabs.forEach(function(t,k){ t.classList.toggle('on',k===i); t.setAttribute('aria-selected',k===i?'true':'false'); });
@@ -81,6 +82,7 @@
     next.addEventListener('click',function(){ go(cur+1); });
     var raf;
     track.addEventListener('scroll',function(){
+      if(Date.now()<lock) return;
       cancelAnimationFrame(raf);
       raf=requestAnimationFrame(function(){
         var i=Math.round(track.scrollLeft/(slides[0].offsetWidth+20));
